@@ -6,7 +6,6 @@
 
 int main() {
   Gradebook gradebook;
-  std::cout << gradebook.report();
   gradebook.add_student("Bob Bobberson", "ABC123");
   gradebook.add_student("Sam Sammerson", "DEF456");
   gradebook.add_student("Jess Jesserson", "HIJ789");
