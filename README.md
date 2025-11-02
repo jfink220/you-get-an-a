@@ -45,25 +45,25 @@ First create a gradebook object:
 Gradebook gradebook;
 ```
 
-You can add a student to the gradebook with the corresponding command which takes in the student's name and their specific ID number:
+You can add a student to the gradebook with the corresponding command which takes in the student's full name and their specific ID number respectively. The text given before the space will be assumed as the first name while the text after the space will be assumed as the last name of the student.
 
 ```cpp
 gradebook.add_student("Joe James", "ABC124");
 ```
 
-You can add an assignment to the gradebook with the corresponding command. This assignment will be added to all students without a specified grade for each student. The command takes in the assignment's name and the maximum score possible on the assignment.
+You can add an assignment to the gradebook with the corresponding command. This assignment will be added to all students without a specified grade for each student. The command takes in the assignment's name and the maximum score possible on the assignment respectively.
 
 ```cpp
 gradebook.add_assignment("Quiz 1", 100);
 ```
 
-You can then enter a grade for a student with the corresponding command. The command takes in the name of the student, the name of the assignment, and the grade that student received on the assignment (as long as this grade is less than the maximum grade possible and not negative).
+You can then enter a grade for a student with the corresponding command. The command takes in the name of the student, the name of the assignment, and the grade that student received on the assignment (as long as this grade is less than the maximum grade possible and not negative) respectively.
 
 ```cpp
 gradebook.enter_grade("Joe James", "Quiz 1", 99);
 ```
 
-You can then get a detailed view and report of the grade book in the console through the corresponding command and a cout statement.
+You can then get a detailed view and report of the grade book in the console through the corresponding command and a cout statement written in the main.cpp (driver) file.
 
 ```cpp
 std::cout << gradebook.report();
